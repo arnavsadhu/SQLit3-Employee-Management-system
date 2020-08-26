@@ -1,0 +1,43 @@
+
+1. Write a menu driven program in Python using SQLITE for the following tasks:
+    a. Add an emp
+    b. Modify an emp record
+    c. Delete an emp
+    d. Generate report
+    e. Exit(E)
+The employee table will have the follwing fields :
+    a. EmpId
+    b. EmpNm
+    c. EmpSal
+    d. DoJ
+    e. Designation
+101,'Sachin',25000,10.08.2010,'Batsman'
+102,'Shewag',20000,12.06.2011,'Batsman'
+103,'Dravid',15000,15.10.2012,'Batsman'
+104,'Laxman',12000,20.11.2013,'Batsman'
+105,'Raina',10000,12.11.2012,'Batsman'
+106,'Dhoni',10000,15.10.2014,'Keeper'
+107,'Pathan',12000,20.12.2013,'Allrounder'
+108,'Kumble',12500, 11.02.2014,'Bowler'
+109,'Srinath',9000, 01.02.2012,'Bowler'
+110,'Bhajji', 9000,10.02.2013,'Bowler'
+111,'Prasad',8000,12.12.2011,'Bowler'
+
+
+Actions to be performed :
+1. Add the above records in a table - "MyTeam"
+2. Increase the salary of the Designation - 'Batsman' by 25%
+    a.Generate a report after increment
+UPDATE MyTeam set EmpSal=1.25*EmpSal where Designation='Batsman'
+
+3. Increase the Salary of the Designation - 'Bowler' by 20%
+    a.Generate a report after increment
+UPDATE MyTeam set EmpSal=1.20*EmpSal where Designation='Bowler'
+
+4. The Designation 'Allrounder' to be changed to 'Batsman'
+UPDATE MyTeam set Designation='Allrounder' where Designation='Batsman'
+
+5. 'Srinath' to retire and 'Nehra' to join the team on 25.05.2016 with salary 20000
+6. Finaly generate a report of the Table
+
+
